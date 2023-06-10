@@ -1,0 +1,38 @@
+:root {
+    --main-bg-color:#002f49;
+    --primeira-cor: #f9ebc4;
+    --segunda-cor:#ffb391;
+    --terceira-cor:#fc2f68;
+    --quarta-cor:#472f5f;
+    --quinta-cor:#08295e;
+}
+*{
+    /* font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Lobster', cursive;
+    /* font-family: 'Lora', serif;
+    font-family: 'Tilt Prism', cursive; */
+}
+body{
+    background-color: var(--quarta-cor);
+
+}
+.head {
+    background: var(--quinta-cor);
+    color: var(--primeira-cor);
+}
+footer{
+    background-color: var(--primeira-cor);
+    color: var(--quinta-cor);
+}
+    .rounded-3{
+        border: 1px solid black;
+        border-radius: rounded;
+    }
+/* CSS PARA DISPOSITIVOS GRANDES */
+@media screen and (min-width: 1080px) {
+/*  Menu */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
