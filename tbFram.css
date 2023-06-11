@@ -9,9 +9,10 @@
 *{
     /* font-family: 'Bebas Neue', sans-serif;
     font-family: 'Josefin Sans', sans-serif; */
-    font-family: 'Lobster', cursive;
-    /* font-family: 'Lora', serif;
-    font-family: 'Tilt Prism', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Lora', serif;
+    /* font-family: 'Tilt Prism', cursive; */
+    box-sizing: border-box
 }
 body{
     background-color: var(--quarta-cor);
@@ -21,14 +22,63 @@ body{
     background: var(--quinta-cor);
     color: var(--primeira-cor);
 }
+/* parte do caousel */
+
+
+    #c {
+    position: relative;
+    top: 50%;
+    width: 800px;
+    height: 200px; 
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -130px;
+}
+
+        #c li {
+            width: 25%;
+            list-style-type: none;
+            top: 0;
+            padding: 20px;
+            height: 200px; 
+            opacity: 0;
+            padding-top: 40px;
+            text-align: center;
+            transition: 1s opacity; 
+        }
+
+.active {
+    opacity: 1;
+}
+
+strong { 
+color: #fff;
+font-weight: 700;
+font-size: 60px; 
+line-height: 100px; 
+}
+
+/* Rodape */
 footer{
     background-color: var(--primeira-cor);
     color: var(--quinta-cor);
+    
 }
     .rounded-3{
         border: 1px solid black;
-        border-radius: rounded;
+        
     }
+    .ft{
+        justify-items: center;
+        text-align: center;
+    }
+        img{
+            width: 40%;
+            height: 40%;
+        }
+        .icon{
+            position:relative;
+        }
 /* CSS PARA DISPOSITIVOS GRANDES */
 @media screen and (min-width: 1080px) {
 /*  Menu */
