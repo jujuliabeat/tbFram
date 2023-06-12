@@ -12,9 +12,9 @@
     /* font-family: 'Lobster', cursive; */
     font-family: 'Lora', serif;
     /* font-family: 'Tilt Prism', cursive; */
-    box-sizing: border-box
+    box-sizing: border-box;
 }
-body{
+body {
     background-color: var(--quarta-cor);
 
 }
@@ -22,63 +22,133 @@ body{
     background: var(--quinta-cor);
     color: var(--primeira-cor);
 }
-/* parte do caousel */
 
+/* Card */
 
-    #c {
-    position: relative;
-    top: 50%;
-    width: 800px;
-    height: 200px; 
-    left: 50%;
-    margin-left: -400px;
-    margin-top: -130px;
+.card{
+    width: 18rem;
+    height: 25rem;
 }
+    .card-img-top{
+        padding: 16px;
+        height: 56%;
+    }
+    
+/* parte do carousel */
 
-        #c li {
-            width: 25%;
-            list-style-type: none;
-            top: 0;
-            padding: 20px;
-            height: 200px; 
-            opacity: 0;
-            padding-top: 40px;
-            text-align: center;
-            transition: 1s opacity; 
+.wrapper {
+    padding: 0 35px;
+    max-width: 1200px;
+    width: 100%;
+    position:relative;
+    background-color: var(--segunda-cor);
+    color: var(--main-bg-color);
+  }
+    .wrapper i {
+      top: 50%;
+      height: 50px;
+      width: 50px;
+      cursor:none;
+      font-size: 1.25rem;
+      position: absolute;
+      text-align: center;
+      line-height: 50px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+      .wrapper i:active{
+        transform: translateY(-50%) scale(0.85);
+      }
+        .wrapper i:first-child{
+          left: -22px;
         }
+          .wrapper i:last-child{
+            right: -22px;
+          }
+            .wrapper .carousel{
+              display: grid;
+              grid-auto-flow: column;
+              grid-auto-columns: calc((100% / 3) - 12px);
+              overflow-x: auto;
+              scroll-snap-type: x mandatory;
+              gap: 16px;
+              border-radius: 8px;
+              scroll-behavior: smooth;
+              scrollbar-width: none;
+            }
+            li ::marker{
+                text-decoration: none;
+                background: transparent;
+                background-color: var(--segunda-cor);
+              }
 
-.active {
-    opacity: 1;
-}
-
-strong { 
-color: #fff;
-font-weight: 700;
-font-size: 60px; 
-line-height: 100px; 
-}
+.carousel::-webkit-scrollbar {
+    display: none;
+  }
+    .carousel.no-transition {
+      scroll-behavior: auto;
+    }
+      .carousel.dragging {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+      }
+            .carousel .card {
+              scroll-snap-align: start;
+              list-style: none;
+              background: transparent;
+              cursor: pointer;
+              padding-bottom: 15px;
+              flex-direction: column;
+              border-radius: 8px;
+            }
 
 /* Rodape */
+
 footer{
     background-color: var(--primeira-cor);
     color: var(--quinta-cor);
-    
+    bottom: 0;  
+    position: 0%;
 }
-    .rounded-3{
-        border: 1px solid black;
-        
-    }
-    .ft{
-        justify-items: center;
-        text-align: center;
-    }
+   
         img{
-            width: 40%;
-            height: 40%;
+            width: 20%;
+            height: 20%;
         }
-        .icon{
-            position:relative;
+
+/* Voltar ao topo */
+
+.btn-fixed{
+    bottom: 30px;
+    right: 30px;
+    visibility:visible;
+    background-color: whitesmoke;
+}
+    .btn-fixed.visible{
+        visibility: visible;
+    }
+    .material-icons i{
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 1 3px 6px rgba(0,0,0,0.23);
+        transform: translateY(-50%);
+    }
+        .material-icons i :hover{
+            transition: transform 0.1s linear;
+            scale: (0.85);
         }
+
 /* CSS PARA DISPOSITIVOS GRANDES */
 @media screen and (min-width: 1080px) {
 /*  Menu */

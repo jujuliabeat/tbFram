@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <title> Juh - Frameworks </title>
@@ -7,24 +8,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&family=Lobster&family=Lora:ital,wght@0,400;1,400;1,500&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&family=Lobster&family=Lora:ital,wght@0,400;1,400;1,500&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="tbFram.css">
 
 
+
 </head>
+
 <body>
 
     <!-- BARRA AZUL TOPO (head) -->
+
     <div class="head">
-        
-        <div class="container  text-end p-2">
-            <span> <i class="bi bi-whatsapp">  </i></span>
+
+        <div class="container gap-3 text-end p-2">
+            <span> <i class="bi bi-whatsapp"> </i></span>
             <span> <i class="bi bi-info-circle-fill"> </i> </span>
             <span> <i class="bi bi-instagram"> </i></i> </span>
         </div>
@@ -32,6 +39,7 @@
     </div>
 
     <!-- MENU DE NAVEGAÇÃO -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
 
@@ -41,15 +49,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse collapse" id="menu-principal"  >
+            <div class="navbar-collapse collapse" id="menu-principal">
                 <ul class="navbar-nav ms-auto">
                     <li><a href="#" class="nav-link active" aria-current="page"> Home </a></li>
-                    
+
                     <li class="dropdown">
-                        <a href="#" 
-                            class="nav-link dropdown-toggle active" aria-current="page"
-                            data-bs-toggle="dropdown"
-                            > Categoria </a>
+                        <a href="#" class="nav-link dropdown-toggle active" aria-current="page"
+                            data-bs-toggle="dropdown"> Categoria </a>
 
                         <ul class="dropdown-menu">
                             <li><a href="" class="dropdown-item"> cat 1 </a></li>
@@ -58,68 +64,126 @@
                             <li><a href="" class="dropdown-item"> cat 3 </a></li>
                             <li><a href="" class="dropdown-item"> cat 3 </a></li>
                         </ul>
-                    
+
                     </li>
-                    
+
                     <li><a href="#" class="nav-link active" aria-current="page"> Promoções </a></li>
                     <li><a href="#" class="nav-link active" aria-current="page"> Sobre </a></li>
                     <li><a href="#" class="nav-link active" aria-current="page"> Contato </a></li>
-                    
-                    
+
+
                 </ul>
+                <button class="btn btn-outline" type="button"><i class="bi bi-bag-fill"></i> Conectar-se </button>
             </div>
         </div>
     </nav>
-<!-- Teste de carousel -->
 
-<ul id="c"> 
-		
-    <li><p><strong>1</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>2</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>3</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>4</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+    <!-- Teste de carousel -->
 
-    <li><p><strong>5</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>6</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>7</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>8</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
+<div data-interval="1000" class="wrapper m-auto p-2">
+    <i class="bi bi-chevron-left"></i>
+        <ul class="carousel gap-4">
+            <li>
+                <div class="card m-auto m-lg-auto ms-md-3 gap-lg-2 gap-md-2 gap-sm-2">
+                    <img src="https://img.wattpad.com/173a47b067432b2043670194daea2a300a3cec3f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6563324a446b514d415f2d677a773d3d2d3832373438383335392e313565396138353738336330613865313535383934353436333335332e6a7067?s=fit&w=720&h=720"
+                        class="card-img-top">
+                    <div class="card-body position-absolute bottom-0">
+                        <h5 class="card-title"> Produto </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"> Preço </a>
+                    </div>
+            <li>
+                <div class="card m-auto m-lg-auto ms-md-3 gap-lg-2 gap-md-2 gap-sm-2">
+                    <img src="https://img.wattpad.com/173a47b067432b2043670194daea2a300a3cec3f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6563324a446b514d415f2d677a773d3d2d3832373438383335392e313565396138353738336330613865313535383934353436333335332e6a7067?s=fit&w=720&h=720"
+                        class="card-img-top">
+                    <div class="card-body position-absolute bottom-0">
+                        <h5 class="card-title"> Produto </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"> Preço </a>
+                    </div>
+            </li>
+            <li>
+                <div class="card m-auto m-lg-auto ms-md-3 gap-lg-2 gap-md-2 gap-sm-2">
+                    <img src="https://img.wattpad.com/173a47b067432b2043670194daea2a300a3cec3f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6563324a446b514d415f2d677a773d3d2d3832373438383335392e313565396138353738336330613865313535383934353436333335332e6a7067?s=fit&w=720&h=720"
+                        class="card-img-top">
+                    <div class="card-body position-absolute bottom-0">
+                        <h5 class="card-title"> Produto </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"> Preço </a>
+                    </div>
+            </li>
+            <li>
+                <div class="card m-auto m-lg-auto ms-md-3 gap-lg-2 gap-md-2 gap-sm-2">
+                    <img src="https://img.wattpad.com/173a47b067432b2043670194daea2a300a3cec3f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6563324a446b514d415f2d677a773d3d2d3832373438383335392e313565396138353738336330613865313535383934353436333335332e6a7067?s=fit&w=720&h=720"
+                        class="card-img-top">
+                    <div class="card-body position-absolute bottom-0">
+                        <h5 class="card-title"> Produto </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"> Preço </a>
+                    </div>
+            </li>
+            <li>
+                <div class="card m-auto m-lg-auto ms-md-3 gap-lg-2 gap-md-2 gap-sm-2">
+                    <img src="https://img.wattpad.com/173a47b067432b2043670194daea2a300a3cec3f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6563324a446b514d415f2d677a773d3d2d3832373438383335392e313565396138353738336330613865313535383934353436333335332e6a7067?s=fit&w=720&h=720"
+                        class="card-img-top">
+                    <div class="card-body position-absolute bottom-0">
+                        <h5 class="card-title"> Produto </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"> Preço </a>
+                    </div>
+            </li>
+            <li>
+                <div class="card m-auto m-lg-auto ms-md-3 gap-lg-2 gap-md-2 gap-sm-2">
+                    <img src="https://img.wattpad.com/173a47b067432b2043670194daea2a300a3cec3f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6563324a446b514d415f2d677a773d3d2d3832373438383335392e313565396138353738336330613865313535383934353436333335332e6a7067?s=fit&w=720&h=720"
+                        class="card-img-top">
+                    <div class="card-body position-absolute bottom-0">
+                        <h5 class="card-title"> Produto </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                            <a href="#" class="btn btn-primary"> Preço </a>
+                    </div>
+            </li>
+        <i class="bi bi-chevron-right"></i>
+    </div>
+</div>
 
-    <li><p><strong>9</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>10</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>11</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
-    <li><p><strong>12</strong></p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li> 
 
-</ul>
+    <!-- rodape -->
 
-<!-- rodape -->
+    <footer class="pt-3 pb-3 col-sm-1 col-md-auto col-lg-auto ms-auto row-cols-1">
+        <div class="container d-flex justify-content-evenly align-items-center gap-3">
 
-    <footer  class="pt-3 pb-3 col-sm-auto col-md-auto col-lg-auto">
-        <div class="container d-flex justify-content-evenly align-items-center">
-            <div class="ft">
+            <!-- <div class="ft">
                 <h3> Sei lá </h3>
-                <img src="https://super.abril.com.br/wp-content/uploads/2018/07/52d0469d865be2752d0003a9emperor-cold_hg.jpeg">
-            </div>
+                <img src="https://static.wikia.nocookie.net/disney/images/e/e5/Edna_Mode.jpg/revision/latest?cb=20180308193657&path-prefix=pt-br">
+            </div> -->
+
             <span>
-                <h3> LOJA:  </h3>
+                <h3> LOJA: </h3>
                 <p> Sobre
                     FAQ
-                    Envio / Retirada 
+                    Envio / Retirada
                     Política da Loja
                     Contate-me</p>
             </span>
             <span>
                 <h3> HORÁRIO: </h3>
-                <p> Seg - Sex: 7:00 - 22:00  ​​
+                <p> Seg - Sex: 7:00 - 22:00 ​​
                     Sábado: 08:00 - 22:00
                     Domingo: 8:00 - 35:00</p>
             </span>
             <span>
                 <h3>ENDEREÇO:</h3>
                 <p> SAINDO DO FORNO:
-    
+
                     Av. Bernardino de Campos, 98
                     São Paulo - SP - 12345-678
-                    
+
                     Tel: (11) 3456-7890</p>
             </span>
             <span>
@@ -131,12 +195,27 @@
             </span>
         </div>
     </footer>
-    <footer class="btn-Light pt-3 pb-3 col-sm-auto col-md-auto col-lg-auto" style="text-align: center;">
-        <p> Produzido pelas alunas Fernanda Neres, Geovana Santos, Júlia Beatriz e Marcella Eduarda para a disciplina de Frammeworks </p>
-    </footer>
+
+
+    <!-- Voltar ao topo -->
+    <a href="#top" class="botao-control-top btn-fixed position-absolute bottom-0">
+        <span class="material-icons">
+            <i class="bi bi-chevron-up"></i>
+        </span>
+    </a>
+
+    <script>
+        const botao = document.querySelector(".btn-fixed");
+
+        window.addEventListener("scroll", function (event) {
+            if (window.scrolly == 0) {
+                botao.classList.remove("visible");
+            } else {
+                botao.classList.add("visible");
+            }
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
-    <script src="tbFram.js"></script>
-
 </body>
+
 </html>
