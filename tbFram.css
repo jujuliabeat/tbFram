@@ -26,84 +26,27 @@ body {
 /* Card */
 
 .card{
-    width: 18rem;
-    height: 25rem;
+    height: 76%;
+}
+.row{
+    margin-left: 70 0 0 70%;
 }
     .card-img-top{
-        padding: 16px;
-        height: 56%;
+        padding: auto;
+        height: 50%;
+        transition: 500ms linear;
+        /*transition: all 0.5s*/
+    }
+      .card-img-top :hover{
+        transform: scale(1.3);
+      }
+    .card-body{
+        padding-top: 5px;
+        padding: 10px;
     }
     
 /* parte do carousel */
 
-.wrapper {
-    padding: 0 35px;
-    max-width: 1200px;
-    width: 100%;
-    position:relative;
-    background-color: var(--segunda-cor);
-    color: var(--main-bg-color);
-  }
-    .wrapper i {
-      top: 50%;
-      height: 50px;
-      width: 50px;
-      cursor:none;
-      font-size: 1.25rem;
-      position: absolute;
-      text-align: center;
-      line-height: 50px;
-      background: #fff;
-      border-radius: 50%;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-      transform: translateY(-50%);
-      transition: transform 0.1s linear;
-    }
-      .wrapper i:active{
-        transform: translateY(-50%) scale(0.85);
-      }
-        .wrapper i:first-child{
-          left: -22px;
-        }
-          .wrapper i:last-child{
-            right: -22px;
-          }
-            .wrapper .carousel{
-              display: grid;
-              grid-auto-flow: column;
-              grid-auto-columns: calc((100% / 3) - 12px);
-              overflow-x: auto;
-              scroll-snap-type: x mandatory;
-              gap: 16px;
-              border-radius: 8px;
-              scroll-behavior: smooth;
-              scrollbar-width: none;
-            }
-            li ::marker{
-                text-decoration: none;
-                background: transparent;
-                background-color: var(--segunda-cor);
-              }
-
-.carousel::-webkit-scrollbar {
-    display: none;
-  }
-    .carousel.no-transition {
-      scroll-behavior: auto;
-    }
-      .carousel.dragging {
-        scroll-snap-type: none;
-        scroll-behavior: auto;
-      }
-            .carousel .card {
-              scroll-snap-align: start;
-              list-style: none;
-              background: transparent;
-              cursor: pointer;
-              padding-bottom: 15px;
-              flex-direction: column;
-              border-radius: 8px;
-            }
 
 /* Rodape */
 
