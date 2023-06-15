@@ -30,6 +30,7 @@ body {
 }
 .row{
     margin-left: 70 0 0 70%;
+    padding: auto;
 }
     .card-img-top{
         padding: auto;
@@ -47,50 +48,70 @@ body {
     
 /* parte do carousel */
 
+.minitopo{
+    background-color: whitesmoke;
+
+}
+    .minitopo a{
+        text-decoration:none;
+        right: 10px;
+    }
 
 /* Rodape */
 
-footer{
+footer {
     background-color: var(--primeira-cor);
     color: var(--quinta-cor);
-    bottom: 0;  
-    position: 0%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-   
-        img{
-            width: 20%;
-            height: 20%;
-        }
+
+footer span {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+footer img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.icon span {
+    margin: 5px;
+}
 
 /* Voltar ao topo */
 
-.btn-fixed{
-    bottom: 30px;
-    right: 30px;
-    visibility:visible;
-    background-color: whitesmoke;
+.botao-control-top {
+    text-decoration: none;
+    color: var(--main-bg-color);
+    background-color: var(--segunda-cor);
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 50%;
+    height: auto;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-    .btn-fixed.visible{
-        visibility: visible;
-    }
-    .material-icons i{
-        top: 50%;
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-        font-size: 1.25rem;
-        position: absolute;
-        text-align: center;
-        line-height: 50px;
-        background: #fff;
-        border-radius: 50%;
-        box-shadow: 1 3px 6px rgba(0,0,0,0.23);
-        transform: translateY(-50%);
-    }
-        .material-icons i :hover{
-            transition: transform 0.1s linear;
-            scale: (0.85);
-        }
 
 /* CSS PARA DISPOSITIVOS GRANDES */
 @media screen and (min-width: 1080px) {
@@ -98,4 +119,9 @@ footer{
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+}
+
+/*Celares*/
+@media screen and (min-width: 600px) {
+
 }
