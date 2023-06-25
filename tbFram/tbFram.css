@@ -1,0 +1,137 @@
+:root{
+  --primeira:#504375;
+  --segunda: #39324d;
+  --terceira:#ffe8ef;
+  --quarta:#c22557;
+  --quinta:#ed5887; 
+}
+body{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/536/590/457/texture-background-text-symbols-wallpaper-preview.jpg");
+}
+/* MENU SUSPENSO */
+
+  .navbar{
+    background-color: var(--primeira);
+    box-shadow: 0 10px 10px rgba(0,0,0,.6);
+    color: var(--terceira);
+    position: fixed;
+  }
+    .navbar button{
+      background-color: transparent;
+      border-radius: 0.70rem;
+      border: 0.75px none;
+    }
+      .navbar form{
+        border-collapse: collapse;
+      }
+        .navbar a{
+          padding: 10px;
+        }
+
+/* HOME */
+.global{
+  display: flex;
+  flex-direction: column;
+}
+  .crr{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: Esquerdgrid Direitogrid;
+    column-gap: 20px;
+    margin: 20px;
+  }
+
+/* CAROUSEL */
+
+
+
+/* LADO ESCRITO */
+    .Cdireito{
+      display: Direitogrid;
+      border-radius: 0.75rem;
+      background-color: rgba(17, 24, 39, 1);
+      padding: 2rem;
+      color: rgba(243, 244, 246, 1);
+      box-shadow: 0 5px 10px rgba(0,0,0,.6);
+      text-align:center;
+      height: 500px;
+      margin-right: 20px;
+    }
+        .Cdireito h1{
+          margin-top: 50px;
+          margin-bottom: 20px;
+        }
+          .Cdireito button{
+            margin-top: 30px;
+          }
+
+    .Cesquerdo{
+      display: Esquerdgrid;
+    }
+      .Cesquerdo img{
+        height: 500px;
+      }
+/* BOTÃO */
+.Cdireito button {
+  width: 165px;
+  height: 62px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 1rem;
+  border: none;
+  position: relative;
+  background: #100720;
+  transition: 0.1s;
+}
+
+.Cdireito button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Cdireito button:active {
+  transform: scale(1.5) rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  transition: 0.9s;
+}
+
+/* Voltar ao topo */
+
+.botao-control-top {
+  text-decoration: none;
+  color: var(--terceira);
+  background-color: var(--primeira);
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 5px 10px 15px black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS PARA DISPOSITIVOS GRANDES */
+@media screen and (min-width: 1080px) {
+  .dropdown:hover .dropdown-menu {
+      display: block;
+  }
+}
+/* CSS PARA CELULAR */
+@media screen and (max-width: 600px) {
+  .navbar{
+    background-color: var(--primeira);
+    color: var(--terceira);
+  }
+}
