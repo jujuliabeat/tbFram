@@ -1,9 +1,11 @@
 :root{
-  --primeira:#504375;
-  --segunda: #39324d;
-  --terceira:#ffe8ef;
-  --quarta:#c22557;
-  --quinta:#ed5887; 
+  --primeira:#7e097e;
+  --segunda: #640760;
+  --terceira:#4a0541;
+  --quarta:#2f0223;
+  --quinta:#150005; 
+  --sexta:#f1ced4;
+  --img:url("https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80");
 }
 body{
   background-image: url("https://c4.wallpaperflare.com/wallpaper/536/590/457/texture-background-text-symbols-wallpaper-preview.jpg");
@@ -49,16 +51,13 @@ body{
 
 /* CAROUSEL */
 
-.carousel-inner h3{
-  color: var(--quinta);
-  direction: initial;
-}
 #carouselExampleSlidesOnly{
   margin-bottom: 30px;
 }
   #carouselExampleSlidesOnly img{
     height: 500px;
     border-radius: 0.65rem;
+    width: 400px;
   }
 
 
@@ -131,8 +130,8 @@ body{
 
 .botao-control-top {
   text-decoration: none;
-  color: var(--terceira);
-  background-color: var(--primeira);
+  color: var(--quarta);
+  background-color: var(--sexta);
   padding: 10px;
   position: fixed;
   right: 20px;
